@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="style.css">
+    <title>seye.com</title>
+</head>
+
+<body>
+ 
+    <div class="navbar">
+        <h2>Seye ☀︎˚.®●❍☺︎</h2>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#skills-section">Skills</a></li>
+            <!--
+            <li><a href="#">Portfolio</a></li>
+            -->            
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="#start-project">About</a></li>
+        </ul>
+        <button class="hire-btn">Hire Me</button>
+    </div>
+
+    <div class="main">
+        <h4>Hi, I Am <span>Seye </span> 👋  </h4>
+        <p class="title">Student in automation</p>
+        <p class="subtitle">I Design and Code Beautifully Simple Things And I Love What I Do !</p>
+        <img class="moving-image left" src="au.jpg">
+        <img class="moving-image right" src="au.jpg" alt="Moving Image 2">
+
+    </div>
+
+    <div class="guarantee">
+      <div class="item" data-url="experiences.html">
+          <div class="icon">
+              <i class='bx bx-check-shield'></i>
+          </div>
+          <div class="info">
+              <h3>+1</h3>
+              <p>Experiences</p>
+          </div>
+          <i class='bx bx-chevron-right'></i>
+      </div>
+      <div class="item" data-url="projects.html">
+          <div class="icon">
+              <i class='bx bx-check-circle'></i>
+          </div>
+          <div class="info">
+              <h3>+3</h3>
+              <p>Projects</p>
+          </div>
+          <i class='bx bx-chevron-right'></i>
+      </div>
+      <div class="item" data-url="hobbys.html">
+          <div class="icon">
+              <i class='bx bx-laugh'></i>
+          </div>
+          <div class="info">
+              <h3>+3</h3>
+              <p>Hobbys</p>
+          </div>
+          <i class='bx bx-chevron-right'></i>
+      </div>
+  </div>
+
+  <script>
+      document.querySelectorAll('.guarantee .item').forEach(item => {
+          item.addEventListener('click', () => {
+              window.location.href = item.getAttribute('data-url');
+          });
+      });
+  </script>
+    <h5 class="seprator">Who I Am</h5>
+
+    <div class="about">
+        <img src="a.png">
+        <div class="info">
+            <h3>About Me</h3>
+            <p>As a first-year bachelor’s student in
+              automation, I am motivated to develop my skills in the design,
+              troubleshooting and optimization of industrial systems. Passionate about
+              innovative technologies, I am looking for an internship in
+              which I could apply my academic knowledge, learn from
+              experts in the field and contribute to the improvement of your automated processes.
+            </p>
+
+            <a href="myresumeportfolio.pdf" class="hire-btn">My resume</a>          
+        
+          </div>
+    </div>
+
+    <h5 id="skills-section" class="seprator">My Skills</h5>
+
+    <div class="skills">
+        <div class="left">
+            <div class="info">
+                <h3>What My Programming Skills Included?</h3>
+                <p>
+                  I have skills in programming automation systems (API/PLC) using tools such as TIA Portal and Factory I/O, as well as in designing electrical schematics using software such as EPLAN. 
+                  I have a good command of the principles of combinational and sequential logic, 
+                  and I know how to diagnose, troubleshoot and optimize automated systems.
+                   My basic knowledge of industrial communication protocols (Modbus, Profinet) and my ability to work in a team allow me to contribute effectively to technical projects.
+                </p>
+            </div>
+         <!--   <button class="hire-btn">Hire Me</button> -->
+        </div>
+
+        <div class="right">
+            <div class="item">
+                <i class='bx bxl-html5'></i>
+            </div>
+            <div class="item">
+                <i class='bx bxl-css3'></i>
+            </div>
+            <div class="item">
+                <i class='bx bxl-typescript'></i>
+            </div>
+            <div class="item">
+                <i class='bx bxl-git'></i>
+            </div>
+            <div class="item">
+                <i class='bx bxl-bootstrap'></i>
+            </div>
+            <div class="item">
+                <i class='bx bxl-php'></i>
+            </div>
+            <div class="item">
+                <i class='bx bxl-sass'></i>
+            </div>
+            <div class="item">
+                <i class='bx bxl-tailwind-css'></i>
+            </div>
+            <div class="item">
+                <i class='bx bxl-mongodb'></i>
+            </div>
+            <div class="item">
+                <i class='bx bxl-graphql'></i>
+            </div>
+            <div class="item">
+                <i class='bx bxl-jquery'></i>
+            </div>
+            <div class="item">
+                <i class='bx bxl-angular'></i>
+            </div>
+            <div class="item">
+              <i class='bx bxl-python'></i>
+            </div>
+            <div class="item">
+                <i class='bx bxl-windows'></i> 
+            </div>
+            <div class="item">
+              <i class='bx bx-cog'></i>
+            </div> 
+            <div class="item">
+              <i class='bx bxs-flask'></i>
+            </div>
+            
+        </div>
+
+    </div>
+
+    <footer>
+        <div class="start">
+            <h3 id="start-project">Start a project</h3>
+            <p>Interested in working together?</p>
+            <a href="contact.html">
+              <button>Let's do this</button>
+            </a>        </div>
+
+        <div class="cols">
+            <div class="about-col">
+                <h3>seye.</h3>
+                <p>creative programmer</p>
+            </div>
+
+            <div class="links-col">
+                <h4>Useful Links</h4>
+                <a href="#">Home</a>
+                <!--
+                <a href="#">About</a>
+                <a href="#">Skills</a>
+                <a href="#">Portfolio</a>
+                -->
+                <a href="contact.html">Contact</a>
+            </div>
+
+            <div class="links-col">
+                <h4>Social Media </h4>
+                <!--
+                <a href="#">Instagram</a>
+                <a href="#">Linkedin</a>
+                <a href="#">Dribble</a>
+                <a href="#">Youtube</a>
+                <a href="#">Github</a>
+                -->
+                <a> work in progress ! 😁</a> 
+            </div>
+
+            <div class="news-col">
+                <h4>NewsLetter</h4>
+                <p>Enter your email and get notified about news, of.</p>
+
+                <form>
+                    <input type="email" placeholder="Your email address">
+                    <button><i class='bx bxl-telegram'></i></button>
+                </form>
+
+            </div>
+
+        </div>
+
+        <p class="copyright">© <span id="year"></span> Seye. All rights reserved.</p>
+      </footer>
+      
+      <script>
+        document.getElementById('year').textContent = new Date().getFullYear();
+      </script>
+      
+      <style>
+        .copyright {
+          color: #ffb742a5;
+        }
+
+        .right {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px; /* Adjust space between the icons */
+    }
+
+    .item {
+        font-size: 50px; /* Set the initial size of the icons */
+        transition: transform 0.3s ease-in-out, filter 0.3s ease-in-out;
+        cursor: pointer;
+    }
+
+    /* Scaling effect on hover */
+    .item:hover {
+        transform: scale(1.2); /* Scale up by 1.2 times */
+        filter: brightness(1.2); /* Optional: Adds a brightness effect */
+    }
+
+    /* Optionally, you can add a subtle shadow effect on hover */
+    .item:hover {
+        box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    }
+      </style>
+
+    </footer>
+
+</body>
+
+</html>
