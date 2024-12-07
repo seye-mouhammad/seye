@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Me</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #212529; /* Fallback background color */
+            color: #333; /* Your website's text color */
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            overflow: hidden;
+            position: relative;
+        }
+        .video-background {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            z-index: -1;
+        }
+        .container {
+            max-width: 600px;
+            padding: 20px;
+            background-color: rgba(255, 183, 66, 0.9); /* Your website's content background color with transparency */
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            text-align: center;
+            position: relative;
+            z-index: 1;
+        }
+        .contact-item {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 20px;
+        }
+        .contact-item i {
+            font-size: 24px;
+            margin-right: 10px;
+            color: #212529; /* Your website's accent color */
+        }
+        .contact-item a {
+            text-decoration: none;
+            color: #212529; /* Your website's accent color */
+        }
+        .contact-item a:hover {
+            text-decoration: underline;
+        }
+        .character {
+            position: absolute;
+            width: 100px; /* Adjust size as needed */
+            animation: move 10s infinite;
+        }
+        .character:nth-child(1) { top: 10%; left: 20%; animation-delay: 0s; }
+        .character:nth-child(2) { top: 20%; left: 80%; animation-delay: 2s; }
+        .character:nth-child(3) { top: 50%; left: 50%; animation-delay: 4s; }
+        .character:nth-child(4) { top: 80%; left: 30%; animation-delay: 6s; }
+        .character:nth-child(5) { top: 70%; left: 70%; animation-delay: 8s; }
+        @keyframes move {
+            0% { transform: translate(0, 0); }
+            25% { transform: translate(50px, -50px); }
+            50% { transform: translate(-50px, 50px); }
+            75% { transform: translate(50px, 50px); }
+            100% { transform: translate(0, 0); }
+        }
+    </style>
+    <!-- Add Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <video class="video-background" autoplay muted loop>
+        <source src="background-video.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+    <div class="container">
+        <h2>Contact Me</h2>
+        <div class="contact-item">
+            <i class="fas fa-phone"></i>
+            <a href="tel:+1234567890">+1 234 567 890</a>
+        </div>
+        <!--
+            <div class="contact-item">
+            <i class="fas fa-map-marker-alt"></i>
+            <a href="https://www.google.com/maps/place/Your+Address" target="_blank">123 Your Address, City, Country</a>
+            </div>
+        -->
+        <div class="contact-item">
+            <i class="fas fa-envelope"></i>
+            <a href="mailto:info@yourwebsite.com">info@yourwebsite.com</a>
+        </div>
+    </div>
+    <!-- Floating Characters -->
+    <img src="character1.png" alt="Character 1" class="character">
+    <img src="character2.png" alt="Character 2" class="character">
+    <img src="character3.png" alt="Character 3" class="character">
+    <img src="character4.png" alt="Character 4" class="character">
+    <img src="character5.png" alt="Character 5" class="character">
+</body>
+</html>
